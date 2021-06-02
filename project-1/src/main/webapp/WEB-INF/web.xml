@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>project-1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+   
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FrontController</display-name>
+    <servlet-name>FrontController</servlet-name>
+    <servlet-class>com.reston.web.FrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FrontController</servlet-name>
+    <url-pattern>/FrontController</url-pattern>
+    <url-pattern>/login</url-pattern>
+    <url-pattern>/employeeRequests</url-pattern>
+    <url-pattern>/employeeReviewed</url-pattern>
+    <url-pattern>/sendRequestPage</url-pattern>
+    <url-pattern>/sendReimRequest</url-pattern>
+    <url-pattern>/reviewRequest</url-pattern>
+    <url-pattern>/requestApproved</url-pattern>
+    <url-pattern>/requestDenied</url-pattern>
+    <url-pattern>/lookUpResolvedReq</url-pattern>
+    <url-pattern>/resolveOne</url-pattern>
+    <url-pattern>/sendLookUp</url-pattern>
+    <url-pattern>/empList</url-pattern>
+    <url-pattern>/returnMyself</url-pattern>
+    <url-pattern>/updtUsername</url-pattern>
+    <url-pattern>/updtPassword</url-pattern>
+    <url-pattern>/updtPhoneNumber</url-pattern>
+    <url-pattern>/updtEmail</url-pattern>
+    <url-pattern>/updtAddress</url-pattern>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+</web-app>

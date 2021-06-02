@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/employeeHome.css">
+</head>
+
+<body>
+    <!-- <h1 id="welcome">Hey I think we did it!!</h1>
+
+    <p>view this graph</p>
+    <form name="RRform" onsubmit="RR(event.preventDefault())">
+        
+        <button type="submit" class="btn btn-primary">PendingRequests</button>
+
+    </form>
+
+    <form name="ReviewedRequestsForm" onsubmit="RevReq(event.preventDefault())">
+        <button type="submit" class="btn btn-primary">ReviewedRequests</button>
+    </form>
+
+    <form name="newRequest" onsubmit="newReq(event.preventDefault())">
+        <button type="submit" class="btn btn-primary">SendNewRequest</button>
+    </form>
+    <button type="button" class="btn btn-primary" onclick="returnMyInfo(event.preventDefault())">View And Update My
+        Info</button>
+
+
+    <h1>hello there should be a good button above this</h1>
+
+<p>hi</p>
+
+
+    -->
+
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand" id="reston" href="employeeHome.html">Reston</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            
+
+              
+              
+              <button type="button"  class="logout" class="btn btn-primary" onclick="logout(event.preventDefault())">Logout</button>
+          </div>
+        </div>
+      </nav>
+    
+    <h1 id="welcome" class="display-4">Employee Home</h1>
+
+   <table>
+       <tr><td><form name="RRform" onsubmit="RR(event.preventDefault())">
+        <!-- you deleted an extra quot here-->
+        <p>View Pending Reimbursement Requests</p>
+        <button type="submit" class="btn btn-primary">Pending Requests</button>
+
+    </form></td></tr>
+       
+<tr><td><form name="ReviewedRequestsForm" onsubmit="RevReq(event.preventDefault())">
+        <p>View Resolved Reimbursement Requests</p>
+        <button type="submit" class="btn btn-primary">Resolved Requests</button>
+    </form></td></tr>
+    
+<tr><td><form name="newRequest" onsubmit="newReq(event.preventDefault())">
+        <p>Send a New Reimbursement Request</p>
+        <button type="submit" class="btn btn-primary">Send New Request</button>
+    </form></td></tr>
+    
+<tr><td><p>View And Update My Info</p>
+        <button type="button" class="btn btn-primary" onclick="returnMyInfo(event.preventDefault())">View And Update</button>
+    </div></td></tr>
+
+        <!-- <tr><td><p>Logout</p>
+            <button type="button" class="btn btn-primary" onclick="logout(event.preventDefault())">Logout</button>
+        </div></td></tr> -->
+        
+   
+</table>
+    
+
+
+
+
+
+
+
+    <script src="scripts/employeeHome.js"></script>
+   <script src="scripts/logout.js"></script>
+
+</body>
+
+</html>

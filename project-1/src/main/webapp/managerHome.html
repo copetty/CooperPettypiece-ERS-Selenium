@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/managerHome.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand" id="reston" href="managerHome.html">Reston</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         
+
+              
+              
+              <button type="button"  class="logout" class="btn btn-primary" onclick="logout(event.preventDefault())">Logout</button>
+          </div>
+        </div>
+      </nav>
+
+    <h1 id="welcome" class="display-4">Manager Home</h1>
+
+    
+    <table>
+        
+        <tr><td><form name="ReviewReimReq" onsubmit="RevReq(event.preventDefault())"> 
+            <p>Review All Reimbursement Requests</p>
+    <button type="submit" class="btn btn-primary">Review Requests</button>
+</form></td></tr>
+        <tr><td><p>View All Resolved Reimbursement Requests</p><div><button type="submit" class="btn btn-primary" onclick="lookUpResolved(event.preventDefault())">Resolved Requests</button></div></td></tr>
+    <tr><td> <p>Look Up Employee Requests</p> <div><button type="button" class="btn btn-primary" onclick="employeeReqLookUp(event.preventDefault())">Look Up Employee Requests</button></div></td></tr>
+  
+    <tr><td><p>View All Employee Info</p><div><button type="button" class="btn btn-primary" onclick="returnEmployeeList(event.preventDefault())">View All Employees</button></div></td></tr>
+
+    
+    
+    
+    
+    
+    </table>
+
+    
+
+    
+
+    
+
+
+
+
+<script src="scripts/managerHome.js"></script>
+<script src="scripts/logout.js"></script>
+</body>
+</html>

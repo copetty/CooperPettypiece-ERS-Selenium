@@ -1,0 +1,33 @@
+body { 
+    text-align: center;
+    
+ 
+}
+form {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+
+}
+
+h1 {
+    font-weight: 20px;
+    padding: 5%;
+    color: black;
+    
+    
+}
+
+.indexButton {
+    text-align: right;
+}
+
+.logout{
+    background-color: transparent;
+    text-align: right;
+    margin-left: 80%;
+    border-radius: 12%;
+    border: solid rgb(255, 255, 255);
+    color: white;
+}
+

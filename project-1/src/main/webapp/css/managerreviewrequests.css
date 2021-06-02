@@ -1,0 +1,87 @@
+
+/* #employeeInfo {
+    color: blue;
+    border: solid;
+    width: 80%;
+    align-content: center;
+    float: left;
+    table-layout: fixed;
+    height: 20px;
+    
+
+}
+
+th {
+    width: 8%;
+    border: solid;
+    height: 50px;
+}
+
+td {
+    width: 8%;
+    border: solid;
+    text-align: center;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+#employeeInfoButtons {
+    color: blue;
+    border: solid;
+    width: 100px;
+    align-content: center;
+    float: left;
+    table-layout: fixed;
+    height: 20px;
+    
+
+}
+
+.buttonColumn {
+    width: 20%;
+    border: solid;
+    text-align: center;
+    color: green;
+    height: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+} */
+
+h1{
+    text-align: center;
+    padding: 10%;
+}
+
+.approveButton{
+    margin: 2px;
+    background-color: green;
+    font-weight: bold;
+    width: 100px;
+}
+
+.approveButton:focus{
+    background-color: orange;
+}
+
+.denyButton{
+    margin: 2px;
+    background-color: red;
+    font-weight: bolder;
+    width: 100px;
+}
+
+.denyButton:focus{
+    background-color: orange;
+}
+
+.logout{
+    background-color: transparent;
+    text-align: right;
+    margin-left: 80%;
+    border-radius: 12%;
+    border: solid rgb(255, 255, 255);
+    color: white;
+}

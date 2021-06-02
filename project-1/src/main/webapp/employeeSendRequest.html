@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Request</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/employeeSendRequest.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+    <div class="container-fluid">
+      <a class="navbar-brand" id="reston" href="employeeHome.html">Reston</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <a class="navbar-brand" class="employeeHome" href="employeeHome.html">Employee Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation" onclick="logout(event.preventDefault())">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          
+          
+          <button type="button"  class="logout" class="btn btn-primary" onclick="logout(event.preventDefault())">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+<h1 class="display-4">Send a New Reimbursement</h1>
+    <form name="requestAmount" onsubmit="sendReRequest(event.preventDefault())">
+        <div class="mb-3">
+          <label for="rAmount" class="form-label">Request Amount</label>
+          <input type="text" class="form-control" id="rAmount" aria-describedby="emailHelp" name="reqAmount" placeholder="Enter Request Amount">
+          
+        </div>
+        <div class="mb-3">
+          <label for="rReason" class="form-label">Reason</label>
+          <input type="text" class="form-control" id="rReason" name="reqReason" placeholder="Enter Reason">
+        </div>
+
+        <!-- <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1" onchange="checkedIt1(event.preventDefault())">
+          <label class="form-check-label" for="inlineCheckbox1">Lodging</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2" onchange="checkedIt2(event.preventDefault())">
+          <label class="form-check-label" for="inlineCheckbox2">Travel</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" onchange="checkedIt3(event.preventDefault())">
+          <label class="form-check-label" for="inlineCheckbox3">Food</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="inlineCheckbox4" value="option4" onchange="checkedIt4(event.preventDefault())">
+          <label class="form-check-label" for="inlineCheckbox4">Other</label>
+        </div> -->
+
+         <!-- -------------------------------------------------------------------------------------------- -->
+         <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onchange="checkedIt1(event.preventDefault())">
+          <label class="form-check-label" for="inlineRadio1">Lodging</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onchange="checkedIt2(event.preventDefault())">
+          <label class="form-check-label" for="inlineRadio2">Travel</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" onchange="checkedIt3(event.preventDefault())">
+          <label class="form-check-label" for="inlineRadio3">Food</label>
+        </div>
+
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" onchange="checkedIt4(event.preventDefault())">
+        <label class="form-check-label" for="inlineRadio3">Other</label>
+      </div>
+        <!-- ------------------------------------------------------------------------------------------------------- -->
+        
+        <div id="submittedText"></div>
+        
+        <div class="indexButton"><button type="submit" class="btn btn-primary" >Submit</button></div>
+        
+      </form>
+
+      <script src="scripts/employeeSendRequest.js"></script>
+      <script src="scripts/logout.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Lookup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/managerEmployeeLookUp.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+    <div class="container-fluid">
+      <a class="navbar-brand" id="reston" href="managerHome.html">Reston</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <a class="navbar-brand" class="employeeHome" href="managerHome.html">Manager Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation" onclick="logout(event.preventDefault())">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          
+          
+          <button type="button"  class="logout" class="btn btn-primary" onclick="logout(event.preventDefault())">Logout</button>
+      </div>
+    </div>
+  </nav>
+  
+    <h1 class="display-4">Look Up Employee Requests</h1>
+
+    <form name="requestsByName" onsubmit="sendFirstAndLast(event.preventDefault())">
+        <div class="mb-3">
+          <label for="fName" class="form-label">Enter Employee First Name</label>
+          <input type="text" class="form-control" id="fName" aria-describedby="emailHelp" name="empFirstName" placeholder="First Name">
+          
+        </div>
+        <div class="mb-3">
+          <label for="lName" class="form-label">Enter Employee Last Name</label>
+          <input type="text" class="form-control" id="lName" name="empLastName" placeholder="Last Name">
+        </div>
+
+        <div id="warningText"></div>
+        
+        <div class="indexButton"><button type="submit" class="btn btn-primary">Submit</button></div>
+        
+      </form>
+
+      
+   
+
+      <div id="container"></div>
+
+      <script src="scripts/managerEmployeeReqLookUp.js"></script>
+      <script src="scripts/logout.js"></script>
+</body>
+</html>

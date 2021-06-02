@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Requests</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/employeeRR.css">
+<link rel="stylesheet" href="css/managerreviewrequests.css">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand" id="reston" href="managerHome.html">Reston</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <a class="navbar-brand" class="employeeHome" href="managerHome.html">Manager Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation" onclick="logout(event.preventDefault())">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              
+              
+              <button type="button"  class="logout" class="btn btn-primary" onclick="logout(event.preventDefault())">Logout</button>
+          </div>
+        </div>
+      </nav>
+      
+    <h1 class="display-4">Resolve Reimbursement Requests</h1>
+    <div id="container"></div>
+    <div id="approvebuttons"></div>
+
+    <script src="scripts/managerreviewrequests.js"></script>
+    <script src="scripts/logout.js"></script>
+</body>
+</html>

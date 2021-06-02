@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Reston Company</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <h1 class="display-3">Reston Company</h1>
+
+    <form name="loginForm" onsubmit="sendLogin(event.preventDefault())">
+        <div class="mb-3">
+          <label for="uName" class="form-label">Username</label>
+          <input type="text" class="form-control" id="uName" aria-describedby="emailHelp" name="username" placeholder="Enter Username">
+          
+        </div>
+        <div class="mb-3">
+          <label for="pWord" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pWord" name="password" placeholder="Enter Password">
+        </div>
+
+        <div id="warningText"></div>
+        <div class="indexButton"><button type="submit" class="btn btn-primary" >Submit</button></div>
+        
+      </form>
+
+    
+
+
+    <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

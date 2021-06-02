@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    padding: 5%
+}
+
+body{
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    display: inline-block;
+    border-collapse: separate;
+    border-spacing: 50px 0;
+}
+
+td {
+    padding: 7%;
+    width: 50%;
+}
+
+.logout{
+    background-color: transparent;
+    text-align: right;
+    margin-left: 80%;
+    border-radius: 12%;
+    border: solid rgb(255, 255, 255);
+    color: white;
+}

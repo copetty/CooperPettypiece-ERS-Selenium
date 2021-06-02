@@ -1,0 +1,15 @@
+
+
+h1{
+    text-align: center;
+    padding: 10%;
+}
+
+.logout{
+    background-color: transparent;
+    text-align: right;
+    margin-left: 80%;
+    border-radius: 12%;
+    border: solid rgb(255, 255, 255);
+    color: white;
+}

@@ -1,0 +1,58 @@
+body { 
+    text-align: center;
+    
+ 
+}
+form {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+
+}
+
+h1 {
+    font-weight: 20px;
+    padding: 5%;
+    color: black;
+    
+    
+}
+
+.indexButton {
+    text-align: right;
+}
+
+.approveButton{
+    margin: 2px;
+    background-color: green;
+    font-weight: bold;
+    width: 100px;
+}
+
+.approveButton:focus{
+    background-color: orange;
+}
+
+.denyButton{
+    margin: 2px;
+    background-color: red;
+    font-weight: bolder;
+    width: 100px;
+}
+
+.denyButton:focus{
+    background-color: orange;
+}
+
+#container{
+    margin: 5%;
+}
+
+.logout{
+    background-color: transparent;
+    text-align: right;
+    margin-left: 80%;
+    border-radius: 12%;
+    border: solid rgb(255, 255, 255);
+    color: white;
+}
